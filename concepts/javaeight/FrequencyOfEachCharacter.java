@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 public class FrequencyOfEachCharacter {
     public static void main(String[] args) {
        String s="hello world";
-       Map<Object, Long> answer=s.chars().mapToObj(c->(char)c).collect(
-               Collectors.groupingBy(c->c,Collectors.counting()
-               )
-       );
-       System.out.println(answer);
+       //Frequency of each character in a string
+        //filtering-no  map- string to character grouing -yes ,sorting-no,aggregation-yes
+        Map<Character, Long> collect = s.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+
+System.out.println(collect);
     }
 }
