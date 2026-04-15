@@ -1,4 +1,4 @@
-package concepts;
+package concepts.thread;
 
 /**
  *  volatile is a field modifier that ensures visibility of variable
