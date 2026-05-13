@@ -9,5 +9,8 @@ public class Mergeandunique {
         int[]b={34,5,6,7};
        int[]c= IntStream.concat(Arrays.stream(a),Arrays.stream(b)).sorted().distinct().toArray();
        System.out.println(c);
+
+       IntStream.concat(Arrays.stream(a),Arrays.stream(b)).sorted().distinct().toArray();
+       IntStream.concat(Arrays.stream(a),Arrays.stream(b)).sorted().distinct().toArray();
     }
 }
