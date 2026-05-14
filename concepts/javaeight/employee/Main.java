@@ -70,6 +70,8 @@ public class Main {
         Map<String,Optional<Employee>> e3=employees.stream().collect(Collectors.groupingBy(
                 Employee::getDepartment,Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary
         ))));
+        Map<String, Optional<Employee>> maxSalary=employees.stream().collect(Collectors.groupingBy(Employee::getDepartment,
+                Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary))));
 
     }
 
